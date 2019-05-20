@@ -12,10 +12,11 @@ Consignes :
 $m + $n en utilisant echo
 
 
+#
+# Théorie :
+#
 
-Théorie :
-
-En php, vous pouvez déclarer et utiliser des variables, les variables comme en Javascript stocke des données, des valeurs.
+En php, vous pouvez déclarer et utiliser des variables, les variables stocke des données, des valeurs.
 
 Pour indiquer à php que nous souhaitons déclarer une variable, on utilise le signe "$"
 
@@ -25,7 +26,7 @@ $data = "du texte";
 
 $data = 5;
 
-Comme en javascript, lorsque vous assignez du texte à une variable, vous utiliserez " ", lorsque vous déclarez un nombre,
+Lorsque vous assignez du texte à une variable, vous utiliserez " ", lorsque vous déclarez un nombre,
 ceci n'est pas nécessaire.
 
 
@@ -39,17 +40,26 @@ Pour rappel, les noms de variables sont sensibles à la casse : $variable est di
 
  Pour afficher le contenu d'une variable, vous pouvez utiliser l'instruction "echo", exemple :
 
- $texte = "machin";
+ $texte = "Bonjour";
 
  echo $texte;
 
  echo "Du texte normal, ensuite affichage de la variable $texte";
 
- echo "Du texte normal, puis affichage de la variable ".$texte." et on continue ...";
+ echo "Du texte normal, puis affichage de la variable ".$texte." et on continue à ecrire du texte à la suite ...";
 
 
-En php , nous utilisons les "." pour séparer les chaines de caracteres des variables, en javacript on utilise "+", les symboles
-sont différents mais la logique reste la même.
+En php , nous utilisons les "." pour séparer les chaines de caracteres des variables, on appelle cela la Concatenation.
+
+
+On peut également écrire les variables à l'intérieur d'une expression en utilisant {$variable}? ce n'est pas obligatoire mais cela rends votre code plus lisible, exemple :
+
+echo "{$texte} tout le monde !";
+
+
+#
+# A savoir
+#
 
 
 - Portée des variables :
@@ -74,7 +84,7 @@ La variable $x sera accessible depuis la fonction machin car le mot clef global 
 
 Le mot clef static suivi d'une variable permet de déclarer une variable dont la valeur ne sera pas réinitialisé, exemple :
 
-function machin()
+function mafonction()
 {
 static $x=0;
 echo $x;

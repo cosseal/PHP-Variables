@@ -11,6 +11,11 @@ Consignes :
 - Creer à la suite deux variables : $m et $n, leur assigner respectivement les valeurs 5 et 7 , puis afficher l'expression
 $m + $n en utilisant echo
 
+- Creer une variable $prenom qui a pour valeur ton prénom, à la suite utiliser echo pour afficher sous ces différentes formes :
+. En utilisant {$prenom} et des ""
+. En utilisant $prenom et des ''
+. En réalisant une concatenation et des '', écrire Mon prénom est $prenom
+
 
 #
 # Théorie :

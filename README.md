@@ -57,6 +57,13 @@ On peut également écrire les variables à l'intérieur d'une expression en uti
 echo "{$texte} tout le monde !";
 
 
+En utilisant echo, il est également possible d'utiliser des guillemets simples : ' au lieu de " , mais dans ce cas , les variables ne seront pas interprétées.
+
+echo '$texte';
+Affichera $texte et non la valeur stockée dans la variable.
+
+
+
 #
 # A savoir
 #
